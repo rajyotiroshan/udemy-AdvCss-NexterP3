@@ -56,7 +56,7 @@ body {
       1fr
     ) [full-end]; //14*10*8 px wide
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: $bp-large) {
     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
     grid-template-columns: [full-start] minmax(
         6rem,
