@@ -113,31 +113,34 @@ body {
   grid-template-rows: 1fr min-content 6rem 1fr;
   grid-template-columns: max-content;
   grid-row-gap: 1.5rem;
-  justify-content: center; }
+  justify-content: center;
+  /* text as a grid item aws before and after pseudo items*/ }
   .header__logo {
     height: 3rem;
     justify-self: center; }
   .header__btn {
     align-self: start;
     justify-self: start; }
-  .header__seenon-logos img {
-    height: 2.5rem; }
+  .header__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem;
+    justify-items: center; }
+    .header__seenon-logos img {
+      height: 2.5rem;
+      filter: brightness(70%); }
   .header__seenon-text {
-    /*         display: grid;
-        grid-template-columns: 1fr max-content 1fr;
-        grid-column-gap: 1.5rem;
-        align-items: center;
-
-        font-size: 1.6rem;
-        color: $color-grey-light-2;
-
-        &::before,
-        &::after {
-            content: "";
-            height: 1px;
-            display: block;
-            background-color: currentColor;
-        } */ }
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #aaa; }
+    .header__seenon-text::before, .header__seenon-text::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor; }
 
 .realtors {
   background-color: #101d2c;

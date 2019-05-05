@@ -25,13 +25,21 @@
 
     &__seenon-logos {
 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 3rem;
+        justify-items: center;
+
+
         img {
             height: 2.5rem;
+            filter: brightness(70%);
         }
     }
 
+    /* text as a grid item aws before and after pseudo items*/
     &__seenon-text {
-/*         display: grid;
+        display: grid;
         grid-template-columns: 1fr max-content 1fr;
         grid-column-gap: 1.5rem;
         align-items: center;
@@ -45,7 +53,7 @@
             height: 1px;
             display: block;
             background-color: currentColor;
-        } */
+        } 
     }
 
 
